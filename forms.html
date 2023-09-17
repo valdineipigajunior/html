@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
 </head>
+
 <body>
-    <label for="">Insira seu nome</label><br>
-    <input type="text" name="" id=""><br>
-    
+    <form action="">
+        <div><label for="nome">Nome</label></div>
+        <input id="nome" required placeholder="Digite seu nome aqui..." name="nome" />
+
+        <div><label for="email">Email</label></div>
+        <input id="email" placeholder="Digite seu email aqui..." name="email" />
+
+        <div><label for="motivou">O que te motivou participar do evento?</label></div>
+        <textarea name="motivou" placeholder="Descreva aqui..." id="motivou" cols="20" rows="5"></textarea>
+
+        <div><label for="modulo">Selecione seu módulo</label></div>
+        <select required="true" id="modulo" name="modulo">
+            <option value="">Escolher módulo</option>
+            <option value="programacao">Programação</option>
+            <option value="logica">Lógica</option>
+        </select>
+
+        <div>
+            <label for="senha">Cadastre uma senha</label>
+        </div>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui...">
+        <div>
+            <label for="confirmasenha">Confirme a senha</label>
+        </div>
+        <input type="password" name="confirmasenha" id="confirmasenha" placeholder="Repita a senha...">
+
+        <div><label for="">Deseja receber novidades em seu email?</label></div>
+        <label for="sim">Sim</label>
+        <input id="sim" type="radio" name="recebernovidades" value="sim">
+        <label for="nao">Não</label>
+        <input id="nao" type="radio" name="recebernovidades" value="Não">
+        <br><button type="submit">Cadastrar</button>
+
+    </form>
+
+
+
+
+
 </body>
+
 </html>
